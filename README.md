@@ -25,6 +25,9 @@ evaluate `output` for the given file.  What that means is that only
 the `output` part of each of the excercise attribute sets is displayed
 in your terminal.
 
+**If you get stuck** you can scroll down to the bottom of the file
+(past line 80) to see the solution to the puzzle.
+
 If you have any questions, feel free to open an issue :)
 
 

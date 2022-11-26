@@ -14,7 +14,8 @@
 
 # Relevant function: mapAttrs f a
 #
-# where f is a function and a is an attribute set
+# where `f` is a function (which takes two arguments) and `a` is an
+# attribute set
 #
 # Also consider using your solution for "findByRole" from earlier to
 # make this example easier to read!
@@ -38,8 +39,6 @@ rec {
     Tester = 75000;
   };
 
-  # consider pulling out a mapping function to make the function
-  # invocation easier to read
   processPayroll = role: yearlyPayout: /* fill this in */;
 
   output = {
@@ -107,8 +106,6 @@ rec {
 
   findByRole = role: lib.filter (e: e.role == role) employees;
 
-  # consider pulling out a mapping function to make the function
-  # invocation easier to read
   processPayroll = role: yearlyPayout: {
     payout = yearlyPayout / 12.0;
     recipients = map (entry: entry.name) (findByRole role);

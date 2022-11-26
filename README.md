@@ -27,3 +27,13 @@ in your terminal.
 
 If you have any questions, feel free to open an issue :)
 
+
+## Excercise order
+
+Some of the excercises are harder than others.  Generally excercises
+can be done in any order, but if you're new, the following order is
+recommended:
+
+1. attrsets
+2. functions
+3. map

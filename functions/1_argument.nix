@@ -4,13 +4,86 @@
 # Implement makeMessage in such a way that `output.message` becomes "Hallo Nixlings";
 
 rec {
-  makeMessage = a: b: /*... fill in this bit */;
+  makeMessage = a: b: /* fill this in */;
 
   mkGreeting = lang: { "de" = "Hallo"; "en" = "Hello"; }."${lang}";
 
   pluralize = noun: "${noun}s"; ## this is not generally correct but let's just roll with it
 
   output = {
-    message = (makeMessage /* fill in this bit */);
+    message = (makeMessage /* fill this in */);
   };
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SOLUTION
+
+rec {
+  makeMessage = a: b: "${(a "de")} ${(b "Nixling")}";
+
+  output.message = (makeMessage makeGreeting pluralize);
+}
+
+
+*/

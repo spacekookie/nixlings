@@ -7,6 +7,7 @@
 #    "Engineer" = {
 #      payout = /* Monthly amount */;
 #      recipients = [ /* a list of recipients of this payout */ ];
+#      totalPayout = /* Monthly * number of recipients */;
 #    };
 #
 #    ...
@@ -109,6 +110,7 @@ rec {
   processPayroll = role: yearlyPayout: {
     payout = yearlyPayout / 12.0;
     recipients = map (entry: entry.name) (findByRole role);
+    totalPayout = lib.length recipients;
   };
 
   output = {

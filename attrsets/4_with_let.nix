@@ -6,7 +6,7 @@
 
 let
   values = { a = 13; b = 12; c = 11; };
-  doubleValues = /* create a set which is the same as values,
+  doubleValues = /* create a list with the same values as above,
                     but each number is doubled (and without explicitly
                     writing out the values yourself!) */
 in

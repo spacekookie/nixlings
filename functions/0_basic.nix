@@ -3,7 +3,7 @@
 #
 # This can be about as confusing as it sounds :)
 
-{
+rec {
   mkGreeting = greeting: towards: "${greeting} ${towards}";
 
   output = {

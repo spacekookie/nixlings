@@ -11,8 +11,9 @@
 rec {
   makeMessage = a: (b: /* fill in this bit */);
 
-  # mkGreeting = lang: { "de" = "Hallo"; "en" = "Hello"; }."${lang}";
-  # pluralize = noun: "${noun}s"; ## this is not generally correct but let's just roll with it
+  # You can re-use these functions
+  mkGreeting = lang: { "de" = "Hallo"; "en" = "Hello"; }."${lang}";
+  pluralize = noun: "${noun}s"; ## this is not generally correct but let's just roll with it
 
   output = {
     message = (makeMessage "de") "Nixling";

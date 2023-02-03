@@ -8,6 +8,6 @@
 
 {
   output = {
-    message = "Hello Nixlings";
-  }
+    message = "Hello Nixlings"
+  };
 }

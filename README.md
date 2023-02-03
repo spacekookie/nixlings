@@ -31,7 +31,7 @@ via `--extra-experimental-features nix-command` or create a
 configuration file at `~/.config/nix/nix.conf`)
 
 ```
-extra-experimentla-features = nix-command
+extra-experimental-features = nix-command
 ```
 **If you get stuck** you can scroll down to the bottom of the file
 (past line 80) to see the solution to the puzzle.
